@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- typing a thing like a.yam then hitting tab will create an a object with the variable name
+     with a div you just have to type .then variable name and hit tab
+     ctrl b collapses the side thingy a#tab lets you create an a object with
+     an id
+     top right bottom left  if using margin broadly
+     top/bottom left/right for two
+     span is a div that only takes up the space it needs-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T up nigga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <!-- navbar section also ctrl nav for notes-->
+     <nav class="navbar">
+        <a href="/" class="navbar-logo">FB</a>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="navbar__menu">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="books.html" class="navbar__link">Books</a>
+            <a href="contact.html" class="navbar__link">Contact</a>
+            <a href="gallery.html" class="navbar__link">Gallery</a>
+
+        </div>
+     </nav>
+     <div class="yamm">
+     <div class="art-house ">
+
+             
+          <div class="w3-content w3-section" style="max-width:500px">
+             <img class="mySlides" src="pics/PHOTO-2024-12-15-20-37-50.jpg"  >
+             <img class="mySlides" src="pics/PHOTO-2024-12-15-20-37-51.jpg"  >
+                
+             <img class="mySlides" src="pics/IMG_1287.JPG" >
+              
+
+     </div>
+     <div class="locke">
+        <img class="picke" src="pics/IMG_1292.JPG" >
+        <img class="picke" src="pics/IMG_1285.JPG" >
+        <img class="picke" src="pics/IMG_1296.JPG"  >
+        <img class="picke" src="pics/IMG_1290.JPG" >
+        <img class="picke" src="pics/IMG_1282.JPG" >
+        <img class="picke" src="pics/IMG_1286.JPG"  >
+        <img class="picke" src="pics/IMG_1287.JPG" >
+        <img class="picke" src="pics/IMG_1288.JPG" >
+        <img class="picke" src="pics/IMG_1289.JPG"  >
+        <img class="picke" src="pics/IMG_1284.JPG" >
+        <img class="picke" src="pics/IMG_1291.JPG" >
+        <img class="picke" src="pics/IMG_1292.JPG"  >
+
+</div>
+</div>
+       <script>
+           var myIndex = 0;
+           carousel();
+           
+           function carousel() {
+             var i;
+             var x = document.getElementsByClassName("mySlides");
+             for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+             }
+             myIndex++;
+             if (myIndex > x.length) {myIndex = 1}    
+             x[myIndex-1].style.display = "block";  
+             setTimeout(carousel, 2000); // Change image every 2 seconds
+           }
+        </script>
+      
+  
+     <script src="app.js"></script>
+</body>
+</html>

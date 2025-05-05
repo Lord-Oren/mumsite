@@ -1,0 +1,257 @@
+ :root{
+    --red:#f9032f;
+    --black:#000;
+    --white:#fff;
+    --liteorng: rgb(245, 147, 111);
+    --orng:#e25007;
+
+ }
+ *{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+
+ }
+ .navbar{
+    background: var(--black);
+    height: 60px;
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+     
+
+ }
+ .navbar__link{
+    color: var(--white);
+    text-decoration: none;
+    padding: 0rem 1rem;
+
+ }
+ .navbar-logo{
+    color: var(--white);
+    text-decoration: none;
+    padding-left:   1rem;
+    font-size: 1.5rem;
+
+ }
+ .navbar__link:hover{
+    color: var(--red);
+ }
+
+ @media screen and (max-width:768px) {
+    body.active{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .navbar__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar__menu{
+        display:grid ;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,100px);
+        position: absolute;
+        width: 100%;
+        top: -1000px;
+    }
+    .navbar__menu.active{
+        top: 100%;
+        opacity: 1;
+        z-index: 99;
+        height: 100vh;
+        font-size: 1.5rem;
+        background: var(--black);
+    }
+
+    .navbar-toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: var(--white);
+        display: block;
+        cursor: pointer ;
+
+
+
+    }
+    #mobile-menu{
+        position: absolute; 
+        top: 15%;
+        right: 5%;
+        transform:translate(5%, 20%);
+
+         
+    }
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;  
+
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);  
+
+    }
+    
+ }
+
+ /* Hero section*/
+ .hero{
+    background: linear-gradient(to right, rgba(0,0,0, 0.4),rgba(0,0,0, 0.1)), url('./tut-images/unnamed1.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.hero__content{
+    color: var(--white);
+    padding: 3rem 1rem;
+    line-height: 1;
+}
+
+.hero__content h1{
+    font-size: clamp(3rem,8vw, 7rem);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.hero__content p{
+    font-size: clamp(1rem,4vw, 3.5rem);
+     
+    margin-bottom: 3rem;
+
+}
+
+.button{
+    padding: 1rem 3rem;
+    border: none;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+    text-decoration: none;
+    border-radius: 4px;
+    
+}
+
+.button:hover {
+    background: var(--black);
+    
+
+}
+
+.services{
+    background: var(--liteorng);
+    height: 100vh;
+    background-position: center;
+     
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+     
+     
+}
+.topline{
+    margin-bottom: 40px;
+    background-color: var(--orng);
+    color: var(--liteorng);
+    border-radius: 20px;
+    padding: 6px;
+    font-weight: bold;
+    width: 100vh; 
+    
+}
+.services__heading{
+    padding-left: 100px;
+    margin-bottom: 10px;
+
+}
+.service__features{
+    display: flex;
+    flex-direction: column;
+}
+.services__feature{
+    margin-bottom: 25px;
+    padding-left: 100px;
+    text-decoration: none;
+    color: var(--orng);
+    font-weight: bold;
+}
+.services__feature:hover{
+    color: white;
+}
+
+
+.bk__con{
+    background: var(--liteorng);
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.bk{
+    display: flex;
+    flex-direction: column;
+    
+    height: 420px;
+     
+}
+.cover{
+    height: 300px;
+    width: 300px;
+}
+.tite{
+font-size: 30px;
+font-weight: bold;
+}
+.bk__par{
+    font-size: 18px;
+    background-color: var(--orng);
+    color: var(--liteorng);
+    border-radius: 20px;
+    padding: 5px;
+
+}
+
+.yellowpages{
+    background: var(--liteorng);
+    height: 100vh;
+}
+.loud{
+    font-size: 30px;
+font-weight: bold;
+}
+.yllw__pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.yamm{
+    background: var(--liteorng);
+    height: 100vh;
+}
+.art-house{
+    background: url(tut-images/art.jpg);
+    background-size: cover;
+    width: 35vh;
+    height: 35vh;
+    
+}
+ 
