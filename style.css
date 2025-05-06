@@ -1,4 +1,4 @@
-:root{
+ :root{
     --red:#f9032f;
     --black:#000;
     --white:#fff;
@@ -197,6 +197,14 @@
     color: white;
 }
 
+@media screen and (max-width:768px) {
+    .topline{
+        width: 40vh;
+    }
+
+
+}
+
 
 .bk__con{
     background: var(--liteorng);
@@ -245,8 +253,8 @@ font-weight: bold;
      
 }
 .cover{
-    height: 300px;
-    width: 300px;
+    height: 150px;
+    width: 150px;
 }
 .tite{
 font-size: 30px;
@@ -258,6 +266,8 @@ font-weight: bold;
     color: var(--liteorng);
     border-radius: 20px;
     padding: 5px;
+    margin-bottom: 5px;
+    width: 380px;
 
 }
 }
@@ -305,5 +315,37 @@ padding-left: 60px;
     height: 30vh;
     width: 30vh;
 }
- 
+
+
+@media screen and (max-width:768px) {
+
+    .w3-content{
+        margin-left: -30px;
+        margin-bottom: 30px;
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .locke{
+        padding-left: 10px;
+
+    }
+
+    .picke{
+
+        height: 10vh;
+        width: 10vh;
+
+    }
+
+    .mySlides{
+        height: 22vh;
+        width: 22vh;
+        padding-top: 80px;
+        padding-left: 60px;
+    }
+
+
+
+}
  
