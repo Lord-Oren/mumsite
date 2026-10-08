@@ -221,6 +221,11 @@
     height: 520px;
      
 }
+.bundle{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .cover{
     height: 300px;
     width: 300px;
@@ -257,6 +262,10 @@ font-weight: bold;
     width: 150px;
 }
 .tite{
+font-size: 30px;
+font-weight: bold;
+}
+.stite{
 font-size: 30px;
 font-weight: bold;
 }
